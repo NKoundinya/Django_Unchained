@@ -21,8 +21,19 @@ For Migrations:
         b. py manage.py sqlmigrate 'migration_name' 'number before initial.py' -> gives sql commands that run after migration.
         c. py manage.py migrate -> runs migration to the sql db.
 
--------DATABASE API-------
+------- DATABASE API -------
     Basically django's ORM
 
     You can directly use objects created from models.py and save them to the database.
     These objects serve you sql statements. For instance, object.save() - saves created object (row) to db.
+
+
+------- ADMIN SITE -------
+
+    Run "py manage.py createsuperuser" to create a new user with login credentials.
+
+    "localhost:8000/admin" site will give the user interface for whatever developed.
+    It also allows to do DB operations with models created.
+    
+    We can append the models to admin site by registering in the following way in admin.py file:
+        admin.site.register(model)
