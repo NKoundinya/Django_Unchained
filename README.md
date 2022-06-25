@@ -49,3 +49,14 @@ For Migrations:
         
     This is a simpler way to return the same as 
         - template.render(...)
+
+------- HTTP RESPONSES -------
+    
+    There are different HTTP responses but also shortcuts like 'get_object_or_404'.
+    - Look through different objects and responses.
+
+------- HTML -------
+    
+    There are different ways to use django variables in html pages as well.
+    
+    For example, in polls/index.html line:5 has 'url' in it. Using "url<space>'name of url defined in urls.py'" will inject the url into the path when clicked. You can change the path as you want, it gets injected into the url without any changes to html page.
