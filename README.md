@@ -37,3 +37,15 @@ For Migrations:
     
     We can append the models to admin site by registering in the following way in admin.py file:
         admin.site.register(model)
+
+------- USE DATABASEAPI USING API -------
+
+    'template' contains 'context' paramter which returns python objects with names.
+
+        - template.render(context, request)
+    
+    We can override the above code by
+        - render(request, 'url', context)
+        
+    This is a simpler way to return the same as 
+        - template.render(...)
